@@ -1,0 +1,27 @@
+Install dependencies
+
+        # linux-4.17.11/Documentation/doc-guide/sphinx.rst
+        pip install -r linux-4.17.11/Documentation/sphinx/requirements.txt
+
+Compile htmldocs
+
+        cd linux-4.17.11
+        make htmldocs
+
+Update kernel doc
+
+        - copy index.rst to linux-4.17.11/Documentation
+	- copy img folder to linux-4.17.11/Documentation
+	- Create a softlink linux-4.17.11/drivers/net/wireless/img -> <MAIN/drivers>
+
+Rebuild htmldocs
+
+        cd linux-4.17.11
+        make htmldocs
+
+
+Output files:
+
+        linux-4.17.11/Documentation/output/index.html
+	linux-4.17.11/Documentation/output/img/
+
