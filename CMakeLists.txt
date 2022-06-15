@@ -14,6 +14,11 @@ target_include_directories(mbedcrypto_common
         INTERFACE
         ${CMAKE_SOURCE_DIR}
         ${ZEPHYR_BASE}/subsys/net/ip
+		${HOSTAP_BASE}/
+		${HOSTAP_BASE}/
+		${COMMON_SRC_BASE}/utils
+		${COMMON_SRC_BASE}/drivers
+		${HOSTAP_BASE}/src
 )
 
 target_sources(app PRIVATE
