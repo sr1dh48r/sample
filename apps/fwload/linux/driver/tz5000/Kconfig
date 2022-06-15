@@ -1,5 +1,0 @@
-config FWLOAD
-  tristate "fwload driver" 
-  default y
-  ---help---
-    This is MATIUS Driver.
